@@ -9,35 +9,37 @@ abstract class Item(
 
 }
 
-class Result(
+data class Result(
     var countInSec: Float,
     var countAutomat: Float,
-    var formula: MutableMap<String, Result>
-) {
-    override fun toString(): String {
-        return " : $countInSec Шт/Cек, $countAutomat автоматов, Что нужно : =$formula \n"
-    }
-}
+    var formula: MutableMap<String, Result>,
+    var svodka: MutableMap<String, Result>,
 
-fun calculateAll(list: List<Item>, summary : MutableMap<String, Result> ): MutableMap<String, Result> {
+)
+
+data class Svodka(
+    var countInSec: Float,
+    var countAutomat: Float,
+    )
+
+
+fun calculateAll(list: List<Item>, summary : MutableMap<String, Result> , svodka : MutableMap<String, Result> , baseComponentName: String ): MutableMap<String, Result> {
     val result = mutableMapOf<String, Result>()
-    list.forEach {result.put(it::class.simpleName!!, Result(0F, 0F, formula = mutableMapOf())) }
+    list.forEach {result.put(it::class.simpleName!!, Result(0F, 0F, formula = mutableMapOf(), svodka = mutableMapOf())) }
+
+    list.forEach { component ->
+        if (svodka.contains(component::class.simpleName).not()){
+            svodka[component::class.simpleName!!] = Result(0F, 0F, formula = mutableMapOf(), svodka = mutableMapOf())
+            svodka[component.javaClass.simpleName]!!.countInSec += component.count
+            svodka[component.javaClass.simpleName]!!.countAutomat = countAutoMate(svodka[component.javaClass.simpleName]!!.countInSec,component.speed)
+        }else {
+            svodka[component.javaClass.simpleName]!!.countInSec += component.count
+            svodka[component.javaClass.simpleName]!!.countAutomat = countAutoMate(svodka[component.javaClass.simpleName]!!.countInSec,component.speed)}
+    }
     list.forEach { component ->
         result[component::class.simpleName!!] = result[component::class.simpleName]!!.also {
             it.countInSec += component.count
-            it.formula = calculateAll(component.formula , summary)
-        }
-    }
-    list.forEach { component ->
-        if (summary.contains(component::class.simpleName).not()){
-            result.put(component::class.simpleName!!, Result(0F, 0F, formula = mutableMapOf()))
-        }
-    }
-    list.forEach { component ->
-        summary[component::class.simpleName!!] = summary[component::class.simpleName]!!
-            .also {
-            it.countInSec += component.count
-            it.formula = calculateAll(component.formula , summary)
+            it.formula = calculateAll(component.formula , summary,svodka, baseComponentName )
         }
     }
     list.forEach { component ->
@@ -50,11 +52,11 @@ fun calculateAll(list: List<Item>, summary : MutableMap<String, Result> ): Mutab
 
 fun calculateSummary(list: List<Item>): MutableMap<String, Result> {
     val result = mutableMapOf<String, Result>()
-    list.forEach { result.put(it::class.simpleName!!, Result(0F, 0F, formula = mutableMapOf())) }
+    list.forEach { result.put(it::class.simpleName!!, Result(0F, 0F, formula = mutableMapOf(),mutableMapOf<String, Result>() )) }
     list.forEach { component ->
         result[component::class.simpleName!!] = result[component::class.simpleName]!!.also {
             it.countInSec += component.count
-            it.formula = calculateAll(component.formula,result)
+            it.formula = calculateAll(component.formula,result,result[component.javaClass.simpleName]!!.svodka,component.javaClass.simpleName,)
         }
     }
     list.forEach { component ->
