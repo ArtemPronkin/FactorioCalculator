@@ -1,7 +1,7 @@
 import com.fasterxml.jackson.databind.ObjectMapper
 
 abstract class Item(
-    val time: Float,
+    val productionTime: Float,
     open val count: Float,
     val formula: List<Item>
 ) {
@@ -19,32 +19,40 @@ data class Result(
 data class Summary(
     var countInSec: Float,
     var countAutomat: Float,
-    )
+)
 
 
-fun calculateAll(list: List<Item>, summary : MutableMap<String, Result> , svodka : MutableMap<String, Summary> , baseComponentName: String ): MutableMap<String, Result> {
+fun calculateAll(
+    list: List<Item>,
+    summary: MutableMap<String, Result>,
+    svodka: MutableMap<String, Summary>,
+    baseComponentName: String
+): MutableMap<String, Result> {
     val result = mutableMapOf<String, Result>()
 
-    list.forEach {result.put(it::class.simpleName!!, Result(0F, 0F, formula = mutableMapOf(), summary = mutableMapOf())) }
+    list.forEach {
+        result.put(
+            it::class.simpleName!!,
+            Result(0F, 0F, formula = mutableMapOf(), summary = mutableMapOf())
+        )
+    }
 
     list.forEach { component ->
         val simpleNameComponent = component::class.simpleName!!
-        if (svodka.contains(simpleNameComponent).not()){
-           val default =  Summary(0F, 0F)
-               svodka[simpleNameComponent] = Summary(0F, 0F)
-            svodka[simpleNameComponent]!!.countInSec += component.count
-            svodka[simpleNameComponent]!!.countAutomat = countAutoMate(svodka[simpleNameComponent]!!.countInSec,component.time)
-        }else {
-            svodka[simpleNameComponent]!!.countInSec += component.count
-            svodka[simpleNameComponent]!!.countAutomat = countAutoMate(svodka[simpleNameComponent]!!.countInSec,component.time)}
+        if (svodka.contains(simpleNameComponent).not()) {
+            svodka[simpleNameComponent] = Summary(0F, 0F)
+        }
+        svodka[simpleNameComponent]!!.countInSec += component.count
+        svodka[simpleNameComponent]!!.countAutomat =
+        countAutoMate(svodka[simpleNameComponent]!!.countInSec, component.productionTime)
     }
 
 
     list.forEach { component ->
         result[component::class.simpleName!!] = result[component::class.simpleName]!!.also {
             it.countInSec += component.count
-            it.formula = calculateAll(component.formula , summary,svodka, baseComponentName )
-            it.countAutomat = countAutoMate(it.countInSec, component.time)
+            it.formula = calculateAll(component.formula, summary, svodka, baseComponentName)
+            it.countAutomat = countAutoMate(it.countInSec, component.productionTime)
         }
     }
     return result;
@@ -54,7 +62,7 @@ fun calculateWithSummary(list: List<Item>): MutableMap<String, Result> {
     val result = mutableMapOf<String, Result>()
 
     list.forEach {
-        result[it::class.simpleName!!] = Result(0F, 0F, formula = mutableMapOf(),mutableMapOf<String, Summary>() )
+        result[it::class.simpleName!!] = Result(0F, 0F, formula = mutableMapOf(), mutableMapOf<String, Summary>())
     }
 
     list.forEach { component ->
@@ -63,16 +71,18 @@ fun calculateWithSummary(list: List<Item>): MutableMap<String, Result> {
             it.countInSec += component.count
             it.formula = calculateAll(
                 component.formula,
-                result,result[simpleNameComponent]!!.summary,
-                simpleNameComponent)
-            it.countAutomat = countAutoMate(it.countInSec, component.time)
+                result, result[simpleNameComponent]!!.summary,
+                simpleNameComponent
+            )
+            it.countAutomat = countAutoMate(it.countInSec, component.productionTime)
         }
     }
 
     return result;
 }
 
-fun countAutoMate(count: Float, speed: Float): Float = count.div(1 / speed)
+fun countAutoMate(count: Float, productionTime: Float): Float = count.div(1 / productionTime)
+
 fun main() {
     val map = calculateWithSummary(
         listOf(
