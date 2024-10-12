@@ -166,3 +166,56 @@ data class ProductivityModule(override val count : Float) : Item(productionTime 
         GreenElectricPlate(count*5),
     )
 )
+
+data class BlueBootle(override val count : Float) : Item(productionTime = 24F/2F ,
+    count = count,
+    formula = listOf(
+        RedElecticPlate(count*3/2),
+        Sulfur(count*1/2),
+        Engine(count*2/2),
+    )
+)
+
+data class Engine(override val count : Float) : Item(productionTime = 10F ,
+    count = count,
+    formula = listOf(
+        SteelPlate(count*1),
+        GearWheel(count*1),
+        Pipe(count*2),
+    )
+)
+
+data class Pipe(override val count : Float) : Item(productionTime = 0.5F ,
+    count = count,
+    formula = listOf(
+        Iron(count*1),
+    )
+)
+
+data class Sulfur(override val count : Float) : Item(productionTime = 1F ,
+    count = count,
+    formula = listOf(
+        Water(count*30/2),
+        PetroliumGas(count*30/2),
+    )
+)
+{
+    override val automatSpeed: Float = 1F
+}
+
+data class Water(override val count : Float) : Item(productionTime = 0F ,
+    count = count,
+    formula = listOf(
+    )
+)
+
+data class SummaryBootle(override val count : Float) : Item(productionTime = 0F ,
+    count = count,
+    formula = listOf(
+        GreenBootle(count),
+        RedBootles(count),
+        BlueBootle(count),
+        PurpleBootle(count),
+    )
+)
+

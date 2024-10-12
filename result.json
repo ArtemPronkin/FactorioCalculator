@@ -1,80 +1,139 @@
 {
-  "PurpleBootle": {
-    "countInSec": 2.0,
-    "countAutomat": 18.666666,
+  "SummaryBootle": {
+    "countInSec": 1.0,
+    "countAutomat": 0.0,
     "formula": {
-      "Rail": {
-        "countInSec": 20.0,
+      "GreenBootle": {
+        "countInSec": 1.0,
+        "countAutomat": 8.0,
+        "formula": {
+          "TransportBelt": {
+            "countInSec": 1.0,
+            "countAutomat": 0.6666667,
+            "formula": {
+              "GearWheel": {
+                "countInSec": 1.0,
+                "countAutomat": 0.6666667,
+                "formula": {
+                  "Iron": {
+                    "countInSec": 2.0,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              },
+              "Iron": {
+                "countInSec": 1.0,
+                "countAutomat": 0.0,
+                "formula": {},
+                "summary": {}
+              }
+            },
+            "summary": {}
+          },
+          "Inserter": {
+            "countInSec": 1.0,
+            "countAutomat": 0.6666667,
+            "formula": {
+              "Iron": {
+                "countInSec": 1.0,
+                "countAutomat": 0.0,
+                "formula": {},
+                "summary": {}
+              },
+              "GearWheel": {
+                "countInSec": 1.0,
+                "countAutomat": 0.6666667,
+                "formula": {
+                  "Iron": {
+                    "countInSec": 2.0,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              },
+              "GreenElectricPlate": {
+                "countInSec": 1.0,
+                "countAutomat": 0.6666667,
+                "formula": {
+                  "CooperCable": {
+                    "countInSec": 3.0,
+                    "countAutomat": 1.0,
+                    "formula": {
+                      "Cooper": {
+                        "countInSec": 1.5,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  },
+                  "Iron": {
+                    "countInSec": 1.0,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              }
+            },
+            "summary": {}
+          }
+        },
+        "summary": {}
+      },
+      "RedBootles": {
+        "countInSec": 1.0,
         "countAutomat": 6.666667,
         "formula": {
-          "Stone": {
-            "countInSec": 10.0,
+          "GearWheel": {
+            "countInSec": 1.0,
+            "countAutomat": 0.6666667,
+            "formula": {
+              "Iron": {
+                "countInSec": 2.0,
+                "countAutomat": 0.0,
+                "formula": {},
+                "summary": {}
+              }
+            },
+            "summary": {}
+          },
+          "Cooper": {
+            "countInSec": 1.0,
             "countAutomat": 0.0,
             "formula": {},
             "summary": {}
-          },
-          "SteelPlate": {
-            "countInSec": 10.0,
-            "countAutomat": 80.0,
-            "formula": {
-              "Iron": {
-                "countInSec": 50.0,
-                "countAutomat": 0.0,
-                "formula": {},
-                "summary": {}
-              }
-            },
-            "summary": {}
-          },
-          "IronStick": {
-            "countInSec": 10.0,
-            "countAutomat": 3.3333335,
-            "formula": {
-              "Iron": {
-                "countInSec": 5.0,
-                "countAutomat": 0.0,
-                "formula": {},
-                "summary": {}
-              }
-            },
-            "summary": {}
           }
         },
         "summary": {}
       },
-      "ElectricFurnance": {
-        "countInSec": 0.6666667,
-        "countAutomat": 4.4444447,
+      "BlueBootle": {
+        "countInSec": 1.0,
+        "countAutomat": 16.0,
         "formula": {
-          "SteelPlate": {
-            "countInSec": 6.666667,
-            "countAutomat": 53.333336,
-            "formula": {
-              "Iron": {
-                "countInSec": 33.333336,
-                "countAutomat": 0.0,
-                "formula": {},
-                "summary": {}
-              }
-            },
-            "summary": {}
-          },
           "RedElecticPlate": {
-            "countInSec": 3.3333335,
-            "countAutomat": 26.666668,
+            "countInSec": 1.5,
+            "countAutomat": 12.0,
             "formula": {
               "Plastic": {
-                "countInSec": 6.666667,
-                "countAutomat": 3.3333335,
+                "countInSec": 3.0,
+                "countAutomat": 1.5,
                 "formula": {
                   "Coal": {
-                    "countInSec": 3.3333335,
+                    "countInSec": 1.5,
                     "countAutomat": 0.0,
                     "formula": {},
                     "summary": {}
                   },
                   "PetroliumGas": {
-                    "countInSec": 66.66667,
+                    "countInSec": 30.0,
                     "countAutomat": 0.0,
                     "formula": {},
                     "summary": {}
@@ -83,15 +142,15 @@
                 "summary": {}
               },
               "GreenElectricPlate": {
-                "countInSec": 6.666667,
-                "countAutomat": 4.4444447,
+                "countInSec": 3.0,
+                "countAutomat": 2.0,
                 "formula": {
                   "CooperCable": {
-                    "countInSec": 20.0,
-                    "countAutomat": 6.666667,
+                    "countInSec": 9.0,
+                    "countAutomat": 3.0,
                     "formula": {
                       "Cooper": {
-                        "countInSec": 10.0,
+                        "countInSec": 4.5,
                         "countAutomat": 0.0,
                         "formula": {},
                         "summary": {}
@@ -100,7 +159,7 @@
                     "summary": {}
                   },
                   "Iron": {
-                    "countInSec": 6.666667,
+                    "countInSec": 3.0,
                     "countAutomat": 0.0,
                     "formula": {},
                     "summary": {}
@@ -109,11 +168,11 @@
                 "summary": {}
               },
               "CooperCable": {
-                "countInSec": 13.333334,
-                "countAutomat": 4.4444447,
+                "countInSec": 6.0,
+                "countAutomat": 2.0,
                 "formula": {
                   "Cooper": {
-                    "countInSec": 6.666667,
+                    "countInSec": 3.0,
                     "countAutomat": 0.0,
                     "formula": {},
                     "summary": {}
@@ -124,100 +183,34 @@
             },
             "summary": {}
           },
-          "StoneBlock": {
-            "countInSec": 6.666667,
-            "countAutomat": 10.666667,
+          "Sulfur": {
+            "countInSec": 0.5,
+            "countAutomat": 0.5,
             "formula": {
-              "Stone": {
-                "countInSec": 13.333334,
+              "Water": {
+                "countInSec": 7.5,
+                "countAutomat": 0.0,
+                "formula": {},
+                "summary": {}
+              },
+              "PetroliumGas": {
+                "countInSec": 7.5,
                 "countAutomat": 0.0,
                 "formula": {},
                 "summary": {}
               }
             },
             "summary": {}
-          }
-        },
-        "summary": {}
-      },
-      "ProductivityModule": {
-        "countInSec": 0.6666667,
-        "countAutomat": 13.333334,
-        "formula": {
-          "RedElecticPlate": {
-            "countInSec": 3.3333335,
-            "countAutomat": 26.666668,
-            "formula": {
-              "Plastic": {
-                "countInSec": 6.666667,
-                "countAutomat": 3.3333335,
-                "formula": {
-                  "Coal": {
-                    "countInSec": 3.3333335,
-                    "countAutomat": 0.0,
-                    "formula": {},
-                    "summary": {}
-                  },
-                  "PetroliumGas": {
-                    "countInSec": 66.66667,
-                    "countAutomat": 0.0,
-                    "formula": {},
-                    "summary": {}
-                  }
-                },
-                "summary": {}
-              },
-              "GreenElectricPlate": {
-                "countInSec": 6.666667,
-                "countAutomat": 4.4444447,
-                "formula": {
-                  "CooperCable": {
-                    "countInSec": 20.0,
-                    "countAutomat": 6.666667,
-                    "formula": {
-                      "Cooper": {
-                        "countInSec": 10.0,
-                        "countAutomat": 0.0,
-                        "formula": {},
-                        "summary": {}
-                      }
-                    },
-                    "summary": {}
-                  },
-                  "Iron": {
-                    "countInSec": 6.666667,
-                    "countAutomat": 0.0,
-                    "formula": {},
-                    "summary": {}
-                  }
-                },
-                "summary": {}
-              },
-              "CooperCable": {
-                "countInSec": 13.333334,
-                "countAutomat": 4.4444447,
-                "formula": {
-                  "Cooper": {
-                    "countInSec": 6.666667,
-                    "countAutomat": 0.0,
-                    "formula": {},
-                    "summary": {}
-                  }
-                },
-                "summary": {}
-              }
-            },
-            "summary": {}
           },
-          "GreenElectricPlate": {
-            "countInSec": 3.3333335,
-            "countAutomat": 2.2222223,
+          "Engine": {
+            "countInSec": 1.0,
+            "countAutomat": 13.333334,
             "formula": {
-              "CooperCable": {
-                "countInSec": 10.0,
-                "countAutomat": 3.3333335,
+              "SteelPlate": {
+                "countInSec": 1.0,
+                "countAutomat": 8.0,
                 "formula": {
-                  "Cooper": {
+                  "Iron": {
                     "countInSec": 5.0,
                     "countAutomat": 0.0,
                     "formula": {},
@@ -226,10 +219,272 @@
                 },
                 "summary": {}
               },
-              "Iron": {
-                "countInSec": 3.3333335,
+              "GearWheel": {
+                "countInSec": 1.0,
+                "countAutomat": 0.6666667,
+                "formula": {
+                  "Iron": {
+                    "countInSec": 2.0,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              },
+              "Pipe": {
+                "countInSec": 2.0,
+                "countAutomat": 1.3333334,
+                "formula": {
+                  "Iron": {
+                    "countInSec": 2.0,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              }
+            },
+            "summary": {}
+          }
+        },
+        "summary": {}
+      },
+      "PurpleBootle": {
+        "countInSec": 1.0,
+        "countAutomat": 9.333333,
+        "formula": {
+          "Rail": {
+            "countInSec": 10.0,
+            "countAutomat": 3.3333335,
+            "formula": {
+              "Stone": {
+                "countInSec": 5.0,
                 "countAutomat": 0.0,
                 "formula": {},
+                "summary": {}
+              },
+              "SteelPlate": {
+                "countInSec": 5.0,
+                "countAutomat": 40.0,
+                "formula": {
+                  "Iron": {
+                    "countInSec": 25.0,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              },
+              "IronStick": {
+                "countInSec": 5.0,
+                "countAutomat": 1.6666667,
+                "formula": {
+                  "Iron": {
+                    "countInSec": 2.5,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              }
+            },
+            "summary": {}
+          },
+          "ElectricFurnance": {
+            "countInSec": 0.33333334,
+            "countAutomat": 2.2222223,
+            "formula": {
+              "SteelPlate": {
+                "countInSec": 3.3333335,
+                "countAutomat": 26.666668,
+                "formula": {
+                  "Iron": {
+                    "countInSec": 16.666668,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              },
+              "RedElecticPlate": {
+                "countInSec": 1.6666667,
+                "countAutomat": 13.333334,
+                "formula": {
+                  "Plastic": {
+                    "countInSec": 3.3333335,
+                    "countAutomat": 1.6666667,
+                    "formula": {
+                      "Coal": {
+                        "countInSec": 1.6666667,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      },
+                      "PetroliumGas": {
+                        "countInSec": 33.333336,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  },
+                  "GreenElectricPlate": {
+                    "countInSec": 3.3333335,
+                    "countAutomat": 2.2222223,
+                    "formula": {
+                      "CooperCable": {
+                        "countInSec": 10.0,
+                        "countAutomat": 3.3333335,
+                        "formula": {
+                          "Cooper": {
+                            "countInSec": 5.0,
+                            "countAutomat": 0.0,
+                            "formula": {},
+                            "summary": {}
+                          }
+                        },
+                        "summary": {}
+                      },
+                      "Iron": {
+                        "countInSec": 3.3333335,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  },
+                  "CooperCable": {
+                    "countInSec": 6.666667,
+                    "countAutomat": 2.2222223,
+                    "formula": {
+                      "Cooper": {
+                        "countInSec": 3.3333335,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              },
+              "StoneBlock": {
+                "countInSec": 3.3333335,
+                "countAutomat": 5.3333335,
+                "formula": {
+                  "Stone": {
+                    "countInSec": 6.666667,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              }
+            },
+            "summary": {}
+          },
+          "ProductivityModule": {
+            "countInSec": 0.33333334,
+            "countAutomat": 6.666667,
+            "formula": {
+              "RedElecticPlate": {
+                "countInSec": 1.6666667,
+                "countAutomat": 13.333334,
+                "formula": {
+                  "Plastic": {
+                    "countInSec": 3.3333335,
+                    "countAutomat": 1.6666667,
+                    "formula": {
+                      "Coal": {
+                        "countInSec": 1.6666667,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      },
+                      "PetroliumGas": {
+                        "countInSec": 33.333336,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  },
+                  "GreenElectricPlate": {
+                    "countInSec": 3.3333335,
+                    "countAutomat": 2.2222223,
+                    "formula": {
+                      "CooperCable": {
+                        "countInSec": 10.0,
+                        "countAutomat": 3.3333335,
+                        "formula": {
+                          "Cooper": {
+                            "countInSec": 5.0,
+                            "countAutomat": 0.0,
+                            "formula": {},
+                            "summary": {}
+                          }
+                        },
+                        "summary": {}
+                      },
+                      "Iron": {
+                        "countInSec": 3.3333335,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  },
+                  "CooperCable": {
+                    "countInSec": 6.666667,
+                    "countAutomat": 2.2222223,
+                    "formula": {
+                      "Cooper": {
+                        "countInSec": 3.3333335,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  }
+                },
+                "summary": {}
+              },
+              "GreenElectricPlate": {
+                "countInSec": 1.6666667,
+                "countAutomat": 1.1111112,
+                "formula": {
+                  "CooperCable": {
+                    "countInSec": 5.0,
+                    "countAutomat": 1.6666667,
+                    "formula": {
+                      "Cooper": {
+                        "countInSec": 2.5,
+                        "countAutomat": 0.0,
+                        "formula": {},
+                        "summary": {}
+                      }
+                    },
+                    "summary": {}
+                  },
+                  "Iron": {
+                    "countInSec": 1.6666667,
+                    "countAutomat": 0.0,
+                    "formula": {},
+                    "summary": {}
+                  }
+                },
                 "summary": {}
               }
             },
@@ -240,65 +495,109 @@
       }
     },
     "summary": {
-      "Rail": {
-        "countInSec": 20.0,
-        "countAutomat": 6.666667
+      "GreenBootle": {
+        "countInSec": 1.0,
+        "countAutomat": 8.0
       },
-      "Stone": {
-        "countInSec": 23.333334,
-        "countAutomat": 0.0
+      "TransportBelt": {
+        "countInSec": 1.0,
+        "countAutomat": 0.6666667
       },
-      "SteelPlate": {
-        "countInSec": 16.666668,
-        "countAutomat": 133.33334
+      "GearWheel": {
+        "countInSec": 4.0,
+        "countAutomat": 2.6666667
       },
       "Iron": {
-        "countInSec": 105.0,
+        "countInSec": 73.50001,
         "countAutomat": 0.0
       },
-      "IronStick": {
-        "countInSec": 10.0,
-        "countAutomat": 3.3333335
+      "Inserter": {
+        "countInSec": 1.0,
+        "countAutomat": 0.6666667
       },
-      "ElectricFurnance": {
-        "countInSec": 0.6666667,
-        "countAutomat": 4.4444447
+      "GreenElectricPlate": {
+        "countInSec": 12.333334,
+        "countAutomat": 8.222223
       },
-      "RedElecticPlate": {
-        "countInSec": 6.666667,
-        "countAutomat": 53.333336
+      "CooperCable": {
+        "countInSec": 56.333336,
+        "countAutomat": 18.777779
       },
-      "Plastic": {
-        "countInSec": 13.333334,
+      "Cooper": {
+        "countInSec": 29.166668,
+        "countAutomat": 0.0
+      },
+      "RedBootles": {
+        "countInSec": 1.0,
         "countAutomat": 6.666667
       },
+      "BlueBootle": {
+        "countInSec": 1.0,
+        "countAutomat": 16.0
+      },
+      "RedElecticPlate": {
+        "countInSec": 4.8333335,
+        "countAutomat": 38.666668
+      },
+      "Plastic": {
+        "countInSec": 9.666667,
+        "countAutomat": 4.8333335
+      },
       "Coal": {
-        "countInSec": 6.666667,
+        "countInSec": 4.8333335,
         "countAutomat": 0.0
       },
       "PetroliumGas": {
-        "countInSec": 133.33334,
+        "countInSec": 104.16667,
         "countAutomat": 0.0
       },
-      "GreenElectricPlate": {
-        "countInSec": 16.666668,
-        "countAutomat": 11.111113
+      "Sulfur": {
+        "countInSec": 0.5,
+        "countAutomat": 0.5
       },
-      "CooperCable": {
-        "countInSec": 76.66667,
-        "countAutomat": 25.555557
-      },
-      "Cooper": {
-        "countInSec": 38.333336,
+      "Water": {
+        "countInSec": 7.5,
         "countAutomat": 0.0
+      },
+      "Engine": {
+        "countInSec": 1.0,
+        "countAutomat": 13.333334
+      },
+      "SteelPlate": {
+        "countInSec": 9.333334,
+        "countAutomat": 74.66667
+      },
+      "Pipe": {
+        "countInSec": 2.0,
+        "countAutomat": 1.3333334
+      },
+      "PurpleBootle": {
+        "countInSec": 1.0,
+        "countAutomat": 9.333333
+      },
+      "Rail": {
+        "countInSec": 10.0,
+        "countAutomat": 3.3333335
+      },
+      "Stone": {
+        "countInSec": 11.666667,
+        "countAutomat": 0.0
+      },
+      "IronStick": {
+        "countInSec": 5.0,
+        "countAutomat": 1.6666667
+      },
+      "ElectricFurnance": {
+        "countInSec": 0.33333334,
+        "countAutomat": 2.2222223
       },
       "StoneBlock": {
-        "countInSec": 6.666667,
-        "countAutomat": 10.666667
+        "countInSec": 3.3333335,
+        "countAutomat": 5.3333335
       },
       "ProductivityModule": {
-        "countInSec": 0.6666667,
-        "countAutomat": 13.333334
+        "countInSec": 0.33333334,
+        "countAutomat": 6.666667
       }
     }
   }
