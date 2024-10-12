@@ -1,11 +1,11 @@
 {
   "RedBootles": {
     "countInSec": 2.0,
-    "countAutomat": 10.0,
+    "countAutomat": 13.333334,
     "formula": {
       "GearWheel": {
         "countInSec": 2.0,
-        "countAutomat": 1.0,
+        "countAutomat": 1.3333334,
         "formula": {
           "Iron": {
             "countInSec": 4.0,
@@ -26,29 +26,29 @@
     "summary": {
       "GearWheel": {
         "countInSec": 2.0,
-        "countAutomat": 1.0
-      },
-      "Cooper": {
-        "countInSec": 2.0,
-        "countAutomat": 0.0
+        "countAutomat": 1.3333334
       },
       "Iron": {
         "countInSec": 4.0,
+        "countAutomat": 0.0
+      },
+      "Cooper": {
+        "countInSec": 2.0,
         "countAutomat": 0.0
       }
     }
   },
   "GreenBootle": {
     "countInSec": 2.0,
-    "countAutomat": 12.0,
+    "countAutomat": 16.0,
     "formula": {
       "TransportBelt": {
         "countInSec": 2.0,
-        "countAutomat": 1.0,
+        "countAutomat": 1.3333334,
         "formula": {
           "GearWheel": {
             "countInSec": 2.0,
-            "countAutomat": 1.0,
+            "countAutomat": 1.3333334,
             "formula": {
               "Iron": {
                 "countInSec": 4.0,
@@ -70,7 +70,7 @@
       },
       "Inserter": {
         "countInSec": 2.0,
-        "countAutomat": 1.0,
+        "countAutomat": 1.3333334,
         "formula": {
           "Iron": {
             "countInSec": 2.0,
@@ -80,7 +80,7 @@
           },
           "GearWheel": {
             "countInSec": 2.0,
-            "countAutomat": 1.0,
+            "countAutomat": 1.3333334,
             "formula": {
               "Iron": {
                 "countInSec": 4.0,
@@ -93,11 +93,11 @@
           },
           "GreenElectric": {
             "countInSec": 2.0,
-            "countAutomat": 1.0,
+            "countAutomat": 1.3333334,
             "formula": {
               "CooperCable": {
                 "countInSec": 6.0,
-                "countAutomat": 1.5,
+                "countAutomat": 2.0,
                 "formula": {
                   "Cooper": {
                     "countInSec": 3.0,
@@ -124,27 +124,27 @@
     "summary": {
       "TransportBelt": {
         "countInSec": 2.0,
-        "countAutomat": 1.0
-      },
-      "Inserter": {
-        "countInSec": 2.0,
-        "countAutomat": 1.0
+        "countAutomat": 1.3333334
       },
       "GearWheel": {
         "countInSec": 4.0,
-        "countAutomat": 2.0
+        "countAutomat": 2.6666667
       },
       "Iron": {
         "countInSec": 14.0,
         "countAutomat": 0.0
       },
+      "Inserter": {
+        "countInSec": 2.0,
+        "countAutomat": 1.3333334
+      },
       "GreenElectric": {
         "countInSec": 2.0,
-        "countAutomat": 1.0
+        "countAutomat": 1.3333334
       },
       "CooperCable": {
         "countInSec": 6.0,
-        "countAutomat": 1.5
+        "countAutomat": 2.0
       },
       "Cooper": {
         "countInSec": 3.0,
