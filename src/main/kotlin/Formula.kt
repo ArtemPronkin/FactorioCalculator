@@ -121,17 +121,17 @@ data class ElectricFurnance(override val count : Float) : Item(productionTime = 
 data class RedElecticPlate(override val count : Float) : Item(productionTime = 6F ,
     count = count,
     formula = listOf(
-        Plastic(count*10),
+        Plastic(count*2),
         GreenElectricPlate(count*2),
         CooperCable(count*4)
     )
 )
 
-data class Plastic(override val count : Float) : Item(productionTime = 1F ,
+data class Plastic(override val count : Float) : Item(productionTime = 1F/2 ,
     count = count,
     formula = listOf(
-        Coal(count*1),
-        PetroliumGas(count*20),
+        Coal(count*1/2),
+        PetroliumGas(count*20/2),
     )
 )
 
@@ -152,7 +152,7 @@ data class Plastic(override val count : Float) : Item(productionTime = 1F ,
 data class StoneBlock(override val count : Float) : Item(productionTime = 3.2F ,
     count = count,
     formula = listOf(
-        Stone(count*10),
+        Stone(count*2),
     )
 )
 {

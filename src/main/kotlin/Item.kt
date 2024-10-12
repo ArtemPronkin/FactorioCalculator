@@ -78,8 +78,7 @@ fun countAutoMate(count: Float, productionTime: Float, speedAutomat: Float): Flo
 fun main() {
     val map = calculateWithSummary(
         listOf(
-            RedBootles(2F),
-            GreenBootle(2F)
+            PurpleBootle(2F)
         )
     )
     println(map.map { "*************** \nЧто хотим : " + it.key + it.value.toString() + "\n\n***************" })
