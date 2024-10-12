@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21a541c5-baef-4587-8a2e-fd38328933d0" name="Changes" comment="SECOND commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Formula.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Formula.kt" afterDir="false" />
-    </list>
+    <list default="true" id="21a541c5-baef-4587-8a2e-fd38328933d0" name="Changes" comment="refactoring" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728675262952</updated>
       <workItem from="1728675263999" duration="9577000" />
-      <workItem from="1728722461839" duration="5325000" />
+      <workItem from="1728722461839" duration="5627000" />
     </task>
     <task id="LOCAL-00001" summary="fisrt commit">
       <option name="closed" value="true" />
@@ -139,15 +135,43 @@
       <option name="project" value="LOCAL" />
       <updated>1728727131513</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SECOND commit">
+      <option name="closed" value="true" />
+      <created>1728727956532</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728727956532</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1728728119166</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728728119166</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fisrt commit" />
     <MESSAGE value="SECOND commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="SECOND commit" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>

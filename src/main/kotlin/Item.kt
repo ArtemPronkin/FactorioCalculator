@@ -81,7 +81,6 @@ fun main() {
             SummaryBootle(1F)
         )
     )
-    println(map.map { "*************** \nЧто хотим : " + it.key + it.value.toString() + "\n\n***************" })
     val result = ObjectMapper().writeValueAsString(map)
     println(result)
 }
