@@ -1,5 +1,5 @@
 
-data class RedBootles(override val count : Float) : Item(speed = 5F ,
+data class RedBootles(override val count : Float) : Item(time = 5F ,
     count = count,
     formula = listOf(
         GearWheel(count*1),
@@ -7,23 +7,23 @@ data class RedBootles(override val count : Float) : Item(speed = 5F ,
     )
 )
 
-data class GearWheel(override val count : Float) : Item(speed = 0.5F,
+data class GearWheel(override val count : Float) : Item(time = 0.5F,
 count = count,
 formula = listOf(
 Iron(count*2)
 ))
 
-data class Iron(override val count : Float) : Item(speed = 0F,
+data class Iron(override val count : Float) : Item(time = 0F,
     count = count,
     formula = listOf()
 )
 
-data class Cooper(override val count : Float) : Item(speed = 0F,
+data class Cooper(override val count : Float) : Item(time = 0F,
     count = count,
     formula = listOf()
 )
 
-data class Inserter(override val count : Float) : Item(speed = 0.5F ,
+data class Inserter(override val count : Float) : Item(time = 0.5F ,
     count = count,
     formula = listOf(
         Iron(count*1),
@@ -32,7 +32,7 @@ data class Inserter(override val count : Float) : Item(speed = 0.5F ,
     )
 )
 
-data class TransportBelt(override val count : Float) : Item(speed = 0.5F ,
+data class TransportBelt(override val count : Float) : Item(time = 0.5F ,
     count = count,
     formula = listOf(
         GearWheel(count*1),
@@ -40,7 +40,7 @@ data class TransportBelt(override val count : Float) : Item(speed = 0.5F ,
     )
 )
 
-data class CooperCable(override val count : Float) : Item(speed = 0.25F ,
+data class CooperCable(override val count : Float) : Item(time = 0.25F ,
     count = count,
     formula = listOf(
         Cooper(count/2),
@@ -48,7 +48,7 @@ data class CooperCable(override val count : Float) : Item(speed = 0.25F ,
     )
 )
 
-data class GreenElectric(override val count : Float) : Item(speed = 0.5F ,
+data class GreenElectric(override val count : Float) : Item(time = 0.5F ,
     count = count,
     formula = listOf(
         CooperCable(count*3),
@@ -56,7 +56,7 @@ data class GreenElectric(override val count : Float) : Item(speed = 0.5F ,
     )
 )
 
-data class GreenBootle(override val count : Float) : Item(speed = 6F ,
+data class GreenBootle(override val count : Float) : Item(time = 6F ,
     count = count,
     formula = listOf(
         TransportBelt(count*1),

@@ -11,36 +11,30 @@
             "countInSec": 4.0,
             "countAutomat": 0.0,
             "formula": {},
-            "svodka": {}
+            "summary": {}
           }
         },
-        "svodka": {}
+        "summary": {}
       },
       "Cooper": {
         "countInSec": 2.0,
         "countAutomat": 0.0,
         "formula": {},
-        "svodka": {}
+        "summary": {}
       }
     },
-    "svodka": {
+    "summary": {
       "GearWheel": {
         "countInSec": 2.0,
-        "countAutomat": 1.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 1.0
       },
       "Cooper": {
         "countInSec": 2.0,
-        "countAutomat": 0.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 0.0
       },
       "Iron": {
         "countInSec": 4.0,
-        "countAutomat": 0.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 0.0
       }
     }
   },
@@ -60,19 +54,19 @@
                 "countInSec": 4.0,
                 "countAutomat": 0.0,
                 "formula": {},
-                "svodka": {}
+                "summary": {}
               }
             },
-            "svodka": {}
+            "summary": {}
           },
           "Iron": {
             "countInSec": 2.0,
             "countAutomat": 0.0,
             "formula": {},
-            "svodka": {}
+            "summary": {}
           }
         },
-        "svodka": {}
+        "summary": {}
       },
       "Inserter": {
         "countInSec": 2.0,
@@ -82,7 +76,7 @@
             "countInSec": 2.0,
             "countAutomat": 0.0,
             "formula": {},
-            "svodka": {}
+            "summary": {}
           },
           "GearWheel": {
             "countInSec": 2.0,
@@ -92,10 +86,10 @@
                 "countInSec": 4.0,
                 "countAutomat": 0.0,
                 "formula": {},
-                "svodka": {}
+                "summary": {}
               }
             },
-            "svodka": {}
+            "summary": {}
           },
           "GreenElectric": {
             "countInSec": 2.0,
@@ -109,66 +103,52 @@
                     "countInSec": 3.0,
                     "countAutomat": 0.0,
                     "formula": {},
-                    "svodka": {}
+                    "summary": {}
                   }
                 },
-                "svodka": {}
+                "summary": {}
               },
               "Iron": {
                 "countInSec": 2.0,
                 "countAutomat": 0.0,
                 "formula": {},
-                "svodka": {}
+                "summary": {}
               }
             },
-            "svodka": {}
+            "summary": {}
           }
         },
-        "svodka": {}
+        "summary": {}
       }
     },
-    "svodka": {
+    "summary": {
       "TransportBelt": {
         "countInSec": 2.0,
-        "countAutomat": 1.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 1.0
       },
       "Inserter": {
         "countInSec": 2.0,
-        "countAutomat": 1.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 1.0
       },
       "GearWheel": {
         "countInSec": 4.0,
-        "countAutomat": 2.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 2.0
       },
       "Iron": {
         "countInSec": 14.0,
-        "countAutomat": 0.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 0.0
       },
       "GreenElectric": {
         "countInSec": 2.0,
-        "countAutomat": 1.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 1.0
       },
       "CooperCable": {
         "countInSec": 6.0,
-        "countAutomat": 1.5,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 1.5
       },
       "Cooper": {
         "countInSec": 3.0,
-        "countAutomat": 0.0,
-        "formula": {},
-        "svodka": {}
+        "countAutomat": 0.0
       }
     }
   }
